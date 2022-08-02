@@ -169,5 +169,32 @@ function totalValue(laptops) {
     return totalPrice;
 }
 const gadgetResult = totalValue(computerVillage);
-console.log(gadgetResult);
+// console.log(gadgetResult);
 
+// people survey
+function peopleSurvey(kilometer) {
+    const first10Kilometer = 1000;
+    const second20Kilometer = 2000;
+    const thirdrestKilometer = 3000;
+    if (kilometer <= 10) {
+        const people = kilometer * first10Kilometer;
+        return people;
+    }
+    else if (kilometer <= 30) {
+        const people10Kilometer = 10 * first10Kilometer;
+        const restKilometer = kilometer - 10;
+        const people20Kilometer = restKilometer * second20Kilometer;
+        const totalPeople = people10Kilometer + people20Kilometer;
+        return totalPeople;
+    }
+    else {
+        const people10Kilometer = 10 * first10Kilometer;
+        const people20Kilometer = 20 * second20Kilometer;
+        const restKilometer = kilometer - 30;
+        const peopleRestKilometer = restKilometer * thirdrestKilometer;
+        const totalPeople = people10Kilometer + people20Kilometer + peopleRestKilometer;
+        return totalPeople;
+    }
+}
+const villageArea = peopleSurvey(31);
+console.log(villageArea);
