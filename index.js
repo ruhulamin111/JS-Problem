@@ -133,3 +133,23 @@ for (let i = 1; i <= 30; i++) {
     }
 }
 
+// highest value compare 
+const ryans = [
+    { name: 'asus', price: 65000, ram: 8, ssd: 250, color: 'silver' },
+    { name: 'hp', price: 75000, ram: 4, ssd: 256, color: 'black' },
+    { name: 'acer', price: 85000, ram: 12, ssd: 220, color: 'white' },
+    { name: 'apple', price: 105000, ram: 16, ssd: 560, color: 'silver' },
+    { name: 'samsung', price: 95000, ram: 8, ssd: 220, color: 'black' }
+]
+function highestValue(laptops) {
+    let highest = laptops[0]
+    for (const laptop of laptops) {
+        if (laptop.price > highest.price) {
+            highest = laptop;
+        }
+    }
+    return highest;
+}
+const gadget = highestValue(ryans);
+console.log(gadget);
+
