@@ -96,7 +96,7 @@ function uniqueName(names) {
 }
 const seven = ['karim', 'babul', 'humayon', 'jolil', 'shobor', 'david', 'shobor', 'david']
 const resutlSeven = uniqueName(seven);
-console.log(resutlSeven);
+// console.log(resutlSeven);
 
 // calculation of shopping 
 function shopping(panjabi, pajama, sandal) {
@@ -115,31 +115,31 @@ const panjabiItem = 10;
 const pajamaItem = 5;
 const sandalItem = 2;
 const resultShopping = shopping(panjabiItem, pajamaItem, sandalItem)
-console.log(resultShopping);
+// console.log(resultShopping);
 
 // foobar solve 
 for (let i = 1; i <= 30; i++) {
     if (i % 3 == 0 && i % 5 == 0) {
-        console.log('foobar')
+        // console.log('foobar')
     }
     else if (i % 5 == 0) {
-        console.log('foo')
+        // console.log('foo')
     }
     else if (i % 3 == 00) {
-        console.log('bar')
+        // console.log('bar')
     }
     else {
-        console.log(i)
+        // console.log(i)
     }
 }
 
 // highest value compare 
 const ryans = [
-    { name: 'asus', price: 65000, ram: 8, ssd: 250, color: 'silver' },
-    { name: 'hp', price: 75000, ram: 4, ssd: 256, color: 'black' },
-    { name: 'acer', price: 85000, ram: 12, ssd: 220, color: 'white' },
-    { name: 'apple', price: 105000, ram: 16, ssd: 560, color: 'silver' },
-    { name: 'samsung', price: 95000, ram: 8, ssd: 220, color: 'black' }
+    { name: 'asus', price: 65000, ram: 8, ssd: 250, color: 'silver', quantity: 1 },
+    { name: 'hp', price: 75000, ram: 4, ssd: 256, color: 'black', quantity: 2 },
+    { name: 'acer', price: 85000, ram: 12, ssd: 220, color: 'white', quantity: 4 },
+    { name: 'apple', price: 105000, ram: 16, ssd: 560, color: 'silver', quantity: 5 },
+    { name: 'samsung', price: 95000, ram: 8, ssd: 220, color: 'black', quantity: 10 }
 ]
 function highestValue(laptops) {
     let highest = laptops[0]
@@ -151,5 +151,23 @@ function highestValue(laptops) {
     return highest;
 }
 const gadget = highestValue(ryans);
-console.log(gadget);
+// console.log(gadget);
+
+const computerVillage = [
+    { name: 'asus', price: 65000, ram: 8, ssd: 250, color: 'silver', quantity: 1 },
+    { name: 'hp', price: 75000, ram: 4, ssd: 256, color: 'black', quantity: 2 },
+    { name: 'acer', price: 85000, ram: 12, ssd: 220, color: 'white', quantity: 4 },
+    { name: 'apple', price: 105000, ram: 16, ssd: 560, color: 'silver', quantity: 5 },
+    { name: 'samsung', price: 95000, ram: 8, ssd: 220, color: 'black', quantity: 10 }
+]
+function totalValue(laptops) {
+    let totalPrice = 0;
+    for (const laptop of laptops) {
+        laptopTotal = laptop.price * laptop.quantity;
+        totalPrice = totalPrice + laptopTotal;
+    }
+    return totalPrice;
+}
+const gadgetResult = totalValue(computerVillage);
+console.log(gadgetResult);
 
