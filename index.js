@@ -98,3 +98,21 @@ const seven = ['karim', 'babul', 'humayon', 'jolil', 'shobor', 'david', 'shobor'
 const resutlSeven = uniqueName(seven);
 console.log(resutlSeven);
 
+// calculation of shopping 
+function shopping(panjabi, pajama, sandal) {
+    const panjabiPrice = 1500;
+    const pajamaPrice = 1000;
+    const sandalPrice = 1500;
+
+    const totalPanjabiPrice = pajamaPrice * panjabi;
+    const totalPajamaPrice = pajamaPrice * pajama;
+    const totalSandalPrice = sandalPrice * sandal;
+
+    const totalShopping = totalPanjabiPrice + totalPajamaPrice + totalSandalPrice;
+    return totalShopping;
+}
+const panjabiItem = 10;
+const pajamaItem = 5;
+const sandalItem = 2;
+const resultShopping = shopping(panjabiItem, pajamaItem, sandalItem)
+console.log(resultShopping);
