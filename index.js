@@ -48,7 +48,7 @@ function greatestNumber(numbers) {
 
 const nineScience = [23, 545, 323, 23, 767, 12, 293, 289, -23, -09, 1295]
 const resultScience = greatestNumber(nineScience);
-console.log(resultScience);
+// console.log(resultScience);
 
 // lowest number of an array 
 function lowestNumber(numbers) {
@@ -64,5 +64,23 @@ function lowestNumber(numbers) {
 
 const nineCommerce = [-36, -3456, 5454, -4, 1295]
 const resultCommerce = lowestNumber(nineCommerce);
-console.log(resultCommerce);
+// console.log(resultCommerce);
+
+// fibonacci serius
+function fibonacci(number) {
+    if (typeof number != 'number') {
+        return 'Please input type of number'
+    }
+    if (number < 2) {
+        return 'Please input greater than 2 number'
+    }
+    let fibo = [0, 1]
+    for (let i = 2; i <= number; i++) {
+        fibo[i] = fibo[i - 1] + fibo[i - 2]
+    }
+    return fibo;
+}
+const fiboArray = 15;
+const fiboResult = fibonacci(fiboArray);
+console.log(fiboResult);
 
