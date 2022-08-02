@@ -31,7 +31,38 @@ function sumOfArray(numbers) {
 }
 const someNumber = [24, 545, 767, 23, 554, 59];
 const numberResult = sumOfArray(someNumber);
-console.log(numberResult);
+// console.log(numberResult);
 
 
+// greatest number of an array 
+function greatestNumber(numbers) {
+    let greatest = numbers[0];
+    for (let i = 0; i < numbers.length; i++) {
+        const element = numbers[i];
+        if (element > greatest) {
+            greatest = element;
+        }
+    }
+    return greatest;
+}
+
+const nineScience = [23, 545, 323, 23, 767, 12, 293, 289, -23, -09, 1295]
+const resultScience = greatestNumber(nineScience);
+console.log(resultScience);
+
+// lowest number of an array 
+function lowestNumber(numbers) {
+    let lowest = numbers[0];
+    for (let i = 0; i < numbers.length; i++) {
+        const element = numbers[i];
+        if (element < lowest) {
+            lowest = element;
+        }
+    }
+    return lowest;
+}
+
+const nineCommerce = [-36, -3456, 5454, -4, 1295]
+const resultCommerce = lowestNumber(nineCommerce);
+console.log(resultCommerce);
 
