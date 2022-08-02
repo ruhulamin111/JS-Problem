@@ -116,3 +116,20 @@ const pajamaItem = 5;
 const sandalItem = 2;
 const resultShopping = shopping(panjabiItem, pajamaItem, sandalItem)
 console.log(resultShopping);
+
+// foobar solve 
+for (let i = 1; i <= 30; i++) {
+    if (i % 3 == 0 && i % 5 == 0) {
+        console.log('foobar')
+    }
+    else if (i % 5 == 0) {
+        console.log('foo')
+    }
+    else if (i % 3 == 00) {
+        console.log('bar')
+    }
+    else {
+        console.log(i)
+    }
+}
+
