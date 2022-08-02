@@ -82,5 +82,19 @@ function fibonacci(number) {
 }
 const fiboArray = 15;
 const fiboResult = fibonacci(fiboArray);
-console.log(fiboResult);
+// console.log(fiboResult);
+
+// unique name find 
+function uniqueName(names) {
+    let unique = [];
+    for (const element of names) {
+        if (unique.indexOf(element) == -1) {
+            unique.push(element);
+        }
+    }
+    return unique;
+}
+const seven = ['karim', 'babul', 'humayon', 'jolil', 'shobor', 'david', 'shobor', 'david']
+const resutlSeven = uniqueName(seven);
+console.log(resutlSeven);
 
