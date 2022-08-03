@@ -197,4 +197,5 @@ function peopleSurvey(kilometer) {
     }
 }
 const villageArea = peopleSurvey(31);
-console.log(villageArea);
+// console.log(villageArea);
+
